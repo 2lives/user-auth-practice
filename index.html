@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+     <h1>Webform</h1>
+     <form action="/submit" method="POST" id="webform" name="webform">
+          <span>Add an image</span>
+          <span>We live in a visual culture. Upload an image of the item you're sharing.</span>
+          <label for="image">
+               <input type="file" name="image" id="image" required>Select an Image</input>
+          </label>
+          <span>Add title and description</span>
+          <label for "title">
+               <input type="text " placeholder="title" name="title" id="title" required></input>
+          </label>
+          <label for="desc">
+               <textarea rows="4" cols="40" name="desc" placeholder="Description" id="desc" required></textarea>
+          </label>
+          <span>Categorize your Item (hold shift and click to select multiple)</span>
+          <label for="tags">
+               <select name="tags" id="tags" multiple required>
+                    <option value="electronics">Electronics</option>
+                    <option value="household">Hosuehold Items</option>
+                    <option value="musical">Musical Instruments</option>
+                    <option value="physical">Physical Media</option>
+                    <option value="recreational">Recreational Equipment</option>
+                    <option value="sporting">Sporting Goods</option>
+                    <option value="tools">Tools</option>
+               </select>
+          </label>
+          <span>Great! If you're happy with everything, tap the button.</span>
+          <div class="buttons">
+
+               <button type="submit" id="confirm-button">Submit</button>
+
+          </div>
+
+
+     </form>
+     <script src="/scripts.js"></script>
+</body>
+
+</html>
